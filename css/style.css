@@ -10,6 +10,20 @@
     clear: both;
 }
 
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.pt-4 {
+    padding-top: 40px;
+}
+
+
+
 /********** HEADER **********/
 header {
     float: left;
@@ -19,8 +33,6 @@ header {
     /* debug */
     height: calc(100vh - 50px);
 }
-
-
 
 
 
@@ -54,25 +66,6 @@ button {
     color: white;
 }
 
-.flex {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.flex div {
-    width: 15%;
-}
-
-.flex div img {
-    width: 100%;
-    height: auto;
-}
-
-
-
-
-
 
 /* navbar */
 .navbar {
@@ -99,6 +92,42 @@ li a:hover {
     border-bottom: 1px solid yellow;
 }
 
+
+
+/* row */
+.row {
+    padding-left: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex div {
+    width: 15%;
+    text-align: center;
+}
+
+.flex div img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.bord-rad {
+    border-radius: 50%
+}
+
+main p {
+    font-size: 10px;
+    color: grey;
+}
+
+main h4 {
+    font-size: 12px;
+}
 
 
 
