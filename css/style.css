@@ -10,41 +10,73 @@
     clear: both;
 }
 
-/* header */
+/********** HEADER **********/
 header {
     float: left;
     width: 20%;
     background-color: black;
     color: white;
     /* debug */
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
 }
 
 
 
 
 
-/*** MAIN ***/
+/********** MAIN **********/
 main {
     float: left;
     width: 80%;
-    position: relative;
     background-color: blue;
     color: white;
+    overflow-y: scroll;
     /* debug */
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
 }
 
+/* upgrade */
 .upgrade {
     /* debug */
     background-color: aqua;
     height: 50px;
 }
 
+button {
+    position: fixed;
+    right: 40px;
+    top: 5px;
+    font-size: 10px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex div {
+    width: 15%;
+}
+
+.flex div img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
 /* navbar */
 .navbar {
     font-size: 10px;
-    padding: 5px 0;
 }
 
 .navbar ul {
@@ -55,7 +87,7 @@ main {
 
 li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 
 li a {
@@ -73,10 +105,10 @@ li a:hover {
 
 
 
-/* footer */
+/********** FOOTER **********/
 footer {
     background-color: grey;
     color: white;
     /* debug */
-    height: 100px;
+    height: 50px;
 }
