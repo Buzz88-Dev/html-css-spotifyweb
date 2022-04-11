@@ -23,19 +23,58 @@
 /********** HEADER **********/
 header {
     float: left;
-    width: 20%;
     background-color: black;
     color: white;
+    padding: 20px 15px;
     /* debug */
+    width: 150px;
     height: calc(100vh - 50px);
 }
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header li {
+    display: inline-block;
+    padding: 7px 0px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.crea-playlist {
+    overflow-y: scroll;
+}
+
+.playlist {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /********** MAIN **********/
 main {
     float: left;
-    width: 80%;
+    width: calc(100vw - 150px);
     background-color: rgb(37, 37, 50);
     color: white;
     overflow-y: scroll;
@@ -54,7 +93,7 @@ button {
     position: fixed;
     right: 40px;
     top: 5px;
-    font-size: 10px;
+    font-size: 8px;
     padding: 10px 20px;
     border: 2px solid white;
     border-radius: 20px;
@@ -64,27 +103,27 @@ button {
 
 
 /* navbar */
-.navbar {
+.main-navbar {
     font-size: 10px;
 }
 
-.navbar ul {
+.main-navbar ul {
     list-style-type: none;
     overflow: hidden;
     text-align: center;
 }
 
-li {
+.main-navbar ul li {
     display: inline-block;
     padding: 10px 20px;
 }
 
-li a {
+.main-navbar ul li a {
     color: white;
     text-decoration: none;
 }
 
-li a:hover {
+.main-navbar ul li a:hover {
     border-bottom: 1px solid yellow;
 }
 
@@ -121,6 +160,8 @@ li a:hover {
 main p {
     font-size: 10px;
     color: grey;
+    /* debug per responsive */
+    margin-bottom: 10px;
 }
 
 main h4 {
