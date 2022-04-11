@@ -14,6 +14,10 @@
     margin-bottom: 10px;
 }
 
+.mr-1 {
+    margin-right: 10px;
+}
+
 
 
 /********** HEADER **********/
@@ -32,7 +36,7 @@ header {
 main {
     float: left;
     width: 80%;
-    background-color: blue;
+    background-color: rgb(37, 37, 50);
     color: white;
     overflow-y: scroll;
     /* debug */
@@ -42,7 +46,7 @@ main {
 /* upgrade */
 .upgrade {
     /* debug */
-    background-color: aqua;
+    background-color: rgb(34, 31, 31);
     height: 50px;
 }
 
