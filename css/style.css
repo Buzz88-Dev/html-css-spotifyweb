@@ -14,14 +14,6 @@
     margin-bottom: 10px;
 }
 
-.mt-2 {
-    margin-top: 20px;
-}
-
-.pt-4 {
-    padding-top: 40px;
-}
-
 
 
 /********** HEADER **********/
@@ -95,22 +87,24 @@ li a:hover {
 
 
 /* row */
-.row {
+.row-main {
     padding-left: 10px;
+    padding-top: 40px;
 }
 
-.flex {
+.flex-main {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.flex div {
+.flex-main div {
     width: 15%;
     text-align: center;
 }
 
-.flex div img {
+.flex-main div img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
