@@ -48,7 +48,7 @@ header {
     color: white;
     padding: 10px 15px 0px 15px;
     width: 200px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
 }
 
 .flex-header {
@@ -97,7 +97,7 @@ header .name-playlist {
 
 .installa-app {
     position: fixed;
-    bottom: 50px;
+    bottom: 80px;
     background-color: black;
     width: 170px;
 }
@@ -136,7 +136,7 @@ main {
     color: white;
     overflow-y: scroll;
     /* debug */
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
 }
 
 /* upgrade */
@@ -240,7 +240,7 @@ footer {
     background-color: grey;
     color: white;
     /* debug */
-    height: 50px;
+    height: 80px;
 }
 
 .flex-footer {
@@ -255,7 +255,6 @@ footer {
 .foot-left .col-sx {
     float: left;
     width: 30%;
-    padding: 6px;
     text-align: center;
 }
 
@@ -267,19 +266,27 @@ footer {
 .foot-left .col-centr {
     float: left;
     width: 40%;
-    padding: 9px 5px;
+}
+
+.foot-left .col-centr p {
+    font-size: 10px;
 }
 
 .foot-left .col-dx {
     float: left;
     width: 30%;
-    padding: 15px 5px;
 }
 
 
 .foot-centr {
     width: 40%;
-    height: 50px;
+}
+
+.foot-centr .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
 }
 
 .foot-centr .row-up {
@@ -317,7 +324,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 50px;
+    height: 80px;
 }
 
 .foot-dx .row-right .music-bar {
