@@ -35,6 +35,10 @@ body {
     padding-top: 10px;
 }
 
+.pt-50 {
+    padding-top: 50%;
+}
+
 ::-webkit-scrollbar {
     width: 3px;
 }
@@ -93,7 +97,7 @@ header .flex-header .name-playlist {
 
 header .installa-app {
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     background-color: black;
     width: 170px;
 }
@@ -132,7 +136,8 @@ header .installa-app h6 i {
 
 
 
-/******************** MAIN ********************/
+/************************* MAIN *************************/
+
 main {
     float: left;
     width: calc(100vw - 200px);
@@ -142,9 +147,7 @@ main {
     overflow-y: scroll;
 }
 
-
-
-/* button-upgrade */
+/* main button-upgrade */
 .upgrade {
     position: relative;
     position: fixed;
@@ -166,9 +169,7 @@ button {
     color: white;
 }
 
-
-
-/* navbar */
+/* main navbar */
 .main-navbar {
     font-size: 10px;
     margin-top: 60px;
@@ -194,11 +195,9 @@ button {
     border-bottom: 1px solid rgb(144, 219, 31);
 }
 
-
-
 /* row-main */
 .row-main {
-    padding: 40px 10px 0 10px;
+    padding: 20px 10px 0 10px;
 }
 
 .row-main .flex-main {
@@ -209,9 +208,10 @@ button {
 }
 
 .row-main .flex-main .block {
-    width: 15%;
+    width: 20%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px;
 }
 
 .row-main .flex-main .block img {
@@ -227,7 +227,6 @@ button {
 .row-main p {
     font-size: 10px;
     color: white;
-    margin-bottom: 10px;
 }
 
 .row-main h4 {
@@ -236,78 +235,62 @@ button {
 
 
 
-/******************** FOOTER ********************/
+/************************* FOOTER *************************/
+
 footer {
     background-color: rgb(58, 56, 56);
     color: white;
-    height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 2% 1%;
+    height: 80px;
 }
-
-
 
 /* footer left */
 .foot-left {
-    width: 20%;
-}
-
-.foot-left .row {
+    width: 25%;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 80px;
-    padding: 10px 20px;
 }
 
-.float {
-    width: 60%;
-    margin-right: 10px;
+.foot-left .col-image {
+    width: 15%;
 }
 
-.float::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.float-image {
-    float: left;
-    width: 30%;
-}
-
-.float .float-image img {
+.foot-left .col-image img {
     width: 100%;
     height: auto;
 }
 
-.description {
-    float: left;
-    width: 70%;
-    padding: 10px;
+.foot-left .col-description, .foot-left .col-icons {
+    margin-left: 5%;
 }
 
-.description p {
+.foot-left .col-description p {
     font-size: 10px;
 }
 
-.foot-left .row .icons i {
-    padding-right: 15px;
+.foot-left .col-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foot-left .col-icons i {
     font-size: 12px;
 }
 
-
-
 /* footer center */
 .foot-centr {
-    width: 40%;
+    width: 50%;
 }
 
 .foot-centr .row {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 80px;
-    padding: 10px 0;
+    justify-content: space-between;
 }
 
 .foot-centr .row .row-up {
@@ -317,11 +300,16 @@ footer {
 }
 
 .foot-centr .row .row-up i {
-    margin: 0px 25px;
+    margin: 0% 3%;
+    font-size: 12px;
 }
 
 .foot-centr .row .row-up .center {
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.foot-centr .row .row-margin {
+    margin: 1% 0;
 }
 
 .foot-centr .row .row-down {
@@ -331,51 +319,41 @@ footer {
 }
 
 .foot-centr .row .row-down .time-left {
-    float: left;
-    margin-right: 20px;
+    margin-right: 5%;
     font-size: 10px;
 }
 
 .foot-centr .row .row-down .music-bar {
-    float: left;
     width: 90%;
-    height: 5%;
     border: 1px solid white;
 }
 
 .foot-centr .row .row-down .time-right {
-    float: left;
-    margin-left: 20px;
+    margin-left: 5%;
     font-size: 10px;
 }
 
-
 /* footer right */
 .foot-dx {
-    width: 20%;
-}
-
-.foot-dx .row-right {
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 80px;
-    padding: 10px 20px;
 }
 
-.foot-dx .row-right i {
-    padding-right: 15px;
-    font-size: 12px;
+.foot-dx i {
+    font-size: 10px;
+    margin-right: 5%;
 }
 
-.foot-dx .row-right .music-bar {
-    width: 50%;
-    height: 3%;
+.foot-dx .music-bar {
+    width: 35%;
     border: 1px solid white;
 }
 
 
-/******************** MEDIA QUERY ********************/
+
+/************************* MEDIA QUERY *************************/
 
 @media screen and (min-width: 700px) and (max-width: 845px) {
 
