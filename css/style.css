@@ -1,4 +1,4 @@
-/********** REGOLE GENERALI **********/
+/******************** GENERAL RULES ********************/
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ body {
 
 
 
-/********** HEADER **********/
+/******************** HEADER ********************/
 header {
     float: left;
     background-color: black;
@@ -128,24 +128,24 @@ header .name-playlist {
 
 
 
-/********** MAIN **********/
+/******************** MAIN ********************/
 main {
     float: left;
     width: calc(100vw - 200px);
+    height: calc(100vh - 80px);
     background-color: rgb(37, 37, 50);
     color: white;
     overflow-y: scroll;
-    /* debug */
-    height: calc(100vh - 80px);
 }
 
-/* upgrade */
+
+
+/* button-upgrade */
 .upgrade {
     position: relative;
     position: fixed;
     width: calc(100vw - 150px);
-    opacity: 0.4;
-    /* debug */
+    opacity: 0.6;
     background-color: rgb(34, 31, 31);
     height: 50px;
 }
@@ -153,20 +153,21 @@ main {
 button {
     position: absolute;
     right: 65px;
-    top: 5px;
-    font-size: 8px;
-    padding: 10px 20px;
-    border: 2px solid white;
+    top: 8px;
+    font-size: 9px;
+    padding: 10px 23px;
+    border: 1px solid white;
     border-radius: 20px;
     background-color: transparent;
     color: white;
 }
 
 
+
 /* navbar */
 .main-navbar {
     font-size: 10px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .main-navbar ul {
@@ -186,30 +187,30 @@ button {
 }
 
 .main-navbar ul li a:hover {
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid rgb(144, 219, 31);
 }
 
 
 
-/* row */
+/* row-main */
 .row-main {
-    padding-left: 10px;
-    padding-top: 40px;
+    padding: 40px 10px 0 10px;
 }
 
-.flex-main {
+.row-main .flex-main {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.flex-main div {
+.row-main .flex-main .block {
     width: 15%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.flex-main div img {
+.row-main .flex-main .block img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -219,65 +220,80 @@ button {
     border-radius: 50%
 }
 
-main p {
+.row-main p {
     font-size: 10px;
-    color: grey;
-    /* debug per responsive */
+    color: white;
     margin-bottom: 10px;
 }
 
-main h4 {
+.row-main h4 {
     font-size: 12px;
 }
 
 
 
-
-
-
-/********** FOOTER **********/
+/******************** FOOTER ********************/
 footer {
-    background-color: grey;
+    background-color: rgb(58, 56, 56);
     color: white;
-    /* debug */
     height: 80px;
-}
-
-.flex-footer {
     display: flex;
     justify-content: space-between;
 }
 
+
+
+/* footer left */
 .foot-left {
     width: 20%;
 }
 
-.foot-left .col-sx {
-    float: left;
-    width: 30%;
-    text-align: center;
+.foot-left .row {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
 }
 
-.foot-left .col-sx img {
-    width: 45%;
+.float {
+    width: 60%;
+    margin-right: 10px;
+}
+
+.float::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-image {
+    float: left;
+    width: 30%;
+}
+
+.float .float-image img {
+    width: 100%;
     height: auto;
 }
 
-.foot-left .col-centr {
+.description {
     float: left;
-    width: 40%;
+    width: 70%;
+    padding: 10px;
 }
 
-.foot-left .col-centr p {
+.description p {
     font-size: 10px;
 }
 
-.foot-left .col-dx {
-    float: left;
-    width: 30%;
+.foot-left .row .icons i {
+    padding-right: 15px;
+    font-size: 12px;
 }
 
 
+
+/* footer center */
 .foot-centr {
     width: 40%;
 }
@@ -287,35 +303,50 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     height: 80px;
+    padding: 10px 0;
 }
 
-.foot-centr .row-up {
+.foot-centr .row .row-up {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.foot-centr .row-up i {
-    margin: 5px 20px;
+.foot-centr .row .row-up i {
+    margin: 0px 25px;
 }
 
-.foot-centr .row-down {
+.foot-centr .row .row-up .center {
+    font-size: 22px;
+}
+
+.foot-centr .row .row-down {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.foot-centr .row-down .time-left {
+.foot-centr .row .row-down .time-left {
     float: left;
+    margin-right: 20px;
+    font-size: 10px;
 }
 
-.foot-centr .row-down .music-bar {
+.foot-centr .row .row-down .music-bar {
     float: left;
     width: 90%;
     height: 5%;
-    border: 1px solid red;
+    border: 1px solid white;
 }
 
+.foot-centr .row .row-down .time-right {
+    float: left;
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+
+/* footer right */
 .foot-dx {
     width: 20%;
 }
@@ -325,10 +356,16 @@ footer {
     align-items: center;
     justify-content: flex-end;
     height: 80px;
+    padding: 10px 20px;
+}
+
+.foot-dx .row-right i {
+    padding-right: 15px;
+    font-size: 12px;
 }
 
 .foot-dx .row-right .music-bar {
-    width: 70%;
-    height: 5%;
-    border: 1px solid red;
+    width: 50%;
+    height: 3%;
+    border: 1px solid white;
 }
