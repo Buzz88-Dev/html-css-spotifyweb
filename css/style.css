@@ -71,7 +71,8 @@ header .flex-header img {
 }
 
 header .flex-header li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 header .flex-header li:hover {
@@ -101,7 +102,8 @@ header .flex-header .name-playlist {
 
 header .installa-app {
     position: fixed;
-    bottom: 90px;
+    bottom: 70px;
+    padding-bottom: 10px;
     background-color: black;
     width: 170px;
 }
@@ -140,17 +142,6 @@ header .installa-app h6 i:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /************************* MAIN *************************/
 
 main {
@@ -170,6 +161,7 @@ main {
     opacity: 0.6;
     background-color: rgb(34, 31, 31);
     height: 60px;
+    z-index: 10;
 }
 
 button {
@@ -286,6 +278,9 @@ footer {
     align-items: center;
     padding: 2% 1%;
     height: 80px;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
 }
 
 /* footer left */
@@ -377,15 +372,22 @@ footer {
 
 .foot-centr .row .row-down .music-bar {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 3px;
+    background-color: grey;
 }
 
 .foot-centr .row .row-down .music-bar .color {
+    position: relative;
     width: 30%;
     height: 3px;
     background-color: white;
+}
+
+.foot-centr .row .row-down .music-bar i {
+    position: absolute;
+    bottom: -7px;
+    left: 95%;
+    display: none;
 }
 
 .foot-centr .row .row-down .music-bar .color:hover {
@@ -393,10 +395,8 @@ footer {
     background-color: rgb(24, 160, 24)
 }
 
-.foot-centr .row .row-down .music-bar .no-color {
-    width: 70%;
-    height: 3px;
-    background-color: grey;
+.foot-centr .row .row-down .music-bar .color:hover i {
+    display: block;
 }
 
 .foot-centr .row .row-down .time-right {
@@ -423,20 +423,32 @@ footer {
 }
 
 .foot-dx .music-bar {
-    width: 12%;
+    width: 35%;
+    height: 3px;
+    background-color: grey;
+}
+
+.foot-dx .music-bar .music-bar-color {
+    position: relative;
+    width: 35%;
     height: 3px;
     background-color: white;
 }
 
-.foot-dx .music-bar:hover {
+.foot-dx .music-bar .music-bar-color i {
+    position: absolute;
+    bottom: -5px;
+    left: 95%;
+    display: none;
+}
+
+.foot-dx .music-bar .music-bar-color:hover {
     cursor: pointer;
     background-color: rgb(24, 160, 24);
 }
 
-.foot-dx .music-bar-two {
-    width: 23%;
-    height: 3px;
-    background-color: grey;
+.foot-dx .music-bar-color:hover i {
+    display: block;
 }
 
 
