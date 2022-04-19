@@ -155,7 +155,6 @@ main {
 
 /* main button-upgrade */
 .upgrade {
-    position: relative;
     position: fixed;
     width: 82%;
     opacity: 0.6;
