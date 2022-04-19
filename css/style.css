@@ -573,6 +573,10 @@ footer {
 
     /***** FOOTER *****/
 
+    .foot-left .col-image {
+        width: 30%;
+    }
+
     .foot-left .col-description p {
         font-size: 6px;
     }
@@ -675,7 +679,9 @@ footer {
         font-size: 23px;
     }
 
-    /***** FOOTER *****/
+    .foot-left .col-image {
+        width: 25%;
+    }
 
     .foot-left .col-description p {
         font-size: 9px;
@@ -742,6 +748,10 @@ footer {
     
     .row-main .flex-main .block {
         width: 30%;
+    }
+
+    .foot-left .col-image {
+        width: 20%;
     }
 
 }
