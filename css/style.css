@@ -27,10 +27,6 @@ body {
     margin-bottom: 20px;
 }
 
-.mr-1 {
-    margin-right: 10px;
-}
-
 .pt-1 {
     padding-top: 10px;
 }
@@ -55,7 +51,7 @@ header {
     background-color: black;
     color: white;
     padding: 10px 15px 0px 15px;
-    width: 200px;
+    width: 18%;
     height: calc(100vh - 80px);
 }
 
@@ -109,7 +105,7 @@ header .installa-app {
     bottom: 70px;
     padding-bottom: 10px;
     background-color: black;
-    width: 170px;
+    width: 15%;
 }
 
 header .installa-app div:first-child {
@@ -150,7 +146,7 @@ header .installa-app h6 i:hover {
 
 main {
     float: left;
-    width: calc(100vw - 200px);
+    width: 82%;
     height: calc(100vh - 80px);
     background-color: rgb(37, 37, 50);
     color: white;
@@ -161,7 +157,7 @@ main {
 .upgrade {
     position: relative;
     position: fixed;
-    width: calc(100vw - 150px);
+    width: 82%;
     opacity: 0.6;
     background-color: rgb(34, 31, 31);
     height: 60px;
@@ -170,7 +166,7 @@ main {
 
 button {
     position: absolute;
-    right: 85px;
+    right: 40px;
     top: 15px;
     font-size: 9px;
     padding: 10px 23px;
@@ -346,7 +342,7 @@ footer {
 }
 
 .foot-centr .row .row-up i {
-    margin: 0% 3%;
+    margin: 0% 5%;
     font-size: 12px;
 }
 
@@ -459,12 +455,12 @@ footer {
 
 /************************* MEDIA QUERY *************************/
 
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 200px) and (max-width: 450px) {
 
     /***** HEADER *****/
 
     header {
-        width: 50px;
+        width: 13%;
     }
 
     header .flex-header, header .installa-app {
@@ -521,11 +517,11 @@ footer {
     /***** MAIN *****/
 
     main {
-        width: calc(100vw - 50px);
+        width: 87%;
     }
 
     .upgrade {
-        width: calc(100vw - 50px);
+        width: 87%;
     }
 
     button {
@@ -581,14 +577,12 @@ footer {
         font-size: 6px;
     }
 
-
     .foot-left .col-icons i {
         font-size: 9px;
     }
 
     .foot-centr .row .row-up i {
         font-size: 10px;
-        margin: 0 5%;
     }
 
     .foot-centr .row .row-up i:hover {
@@ -616,29 +610,24 @@ footer {
 
 
 
-@media screen and (min-width: 381px) and (max-width: 600px) {
-
-	/***** HEADER *****/
+@media screen and (min-width: 451px) and (max-width: 600px) {
 
     header {
-        width: 150px;
-    }
-    
-   
-    header .installa-app {
-        width: 120px;
+        width: 30%;
     }
 
-    /***** MAIN *****/
+    header .installa-app {
+        width: 25%;
+    }
 
     main {
-        width: calc(100vw - 150px);
+        width: 70%;
     }
-
+    
     .upgrade {
-        width: calc(100vw - 150px);
+        width: 70%;
     }
-
+    
     button {
         right: 10px;
         top: 15px;
@@ -699,7 +688,6 @@ footer {
 
     .foot-centr .row .row-up i {
         font-size: 10px;
-        margin: 0 5%;
     }
 
     .foot-centr .row .row-up i:hover {
@@ -707,7 +695,7 @@ footer {
     }
 
     .foot-centr .row .row-margin {
-        margin: 3% 0;
+        margin: 2% 0;
     }
 
     .foot-centr .row .row-down .music-bar i {
@@ -728,7 +716,21 @@ footer {
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
 
-    /***** MAIN *****/
+    header {
+        width: 25%;
+    }
+
+    header .installa-app {
+        width: 20%;
+    }
+
+    main {
+        width: 75%;
+    }
+    
+    .upgrade {
+        width: 75%;
+    }
 
     button:hover {
         transform: scale(1.2);
@@ -741,7 +743,6 @@ footer {
     .row-main .flex-main .block {
         width: 30%;
     }
-    
 
 }
 
