@@ -166,7 +166,7 @@ main {
 
 button {
     position: absolute;
-    right: 40px;
+    right: 30px;
     top: 15px;
     font-size: 9px;
     padding: 10px 23px;
@@ -238,7 +238,7 @@ button:hover {
 
 .row-main .flex-main .block .image i {
     position: absolute;
-    font-size: 80px;
+    font-size: 65px;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -563,8 +563,6 @@ footer {
     
     .row-main .flex-main .block .image i {
         font-size: 45px;
-        top: 45%;
-        left: 50%;
     }
 
     .row-main h2 {
@@ -670,9 +668,7 @@ footer {
     }
     
     .row-main .flex-main .block .image i {
-        font-size: 60px;
-        top: 45%;
-        left: 50%;
+        font-size: 50px;
     }
 
     .row-main h2 {
@@ -748,6 +744,10 @@ footer {
     
     .row-main .flex-main .block {
         width: 30%;
+    }
+
+    .row-main .flex-main .block .image i {
+        font-size: 55px;
     }
 
     .foot-left .col-image {
