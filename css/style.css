@@ -733,6 +733,10 @@ footer {
     button:hover {
         transform: scale(1.2);
     }
+
+    .main-navbar ul li {
+        padding: 6px 9px;
+    }
     
     .row-main .flex-main .block {
         width: 30%;
